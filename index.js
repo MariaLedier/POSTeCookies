@@ -9,7 +9,7 @@ let listaEmpresas = [];
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(process.cwd(), "public")));
+app.use(express.static(path.join(process.cwd(), "publico")));
 
 function cadastrarEmpresa(requisicao, resposta) {
   const {
